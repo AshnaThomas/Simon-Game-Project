@@ -19,7 +19,7 @@ $(".btn").click(function() {
 });
 
 //press any key to start the game
-$(document).keydown(function() {
+$(document).on('keydown touchstart', function() {
   if (!started) {
 
     nextSequence();
